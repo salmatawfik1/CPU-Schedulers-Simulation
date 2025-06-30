@@ -5,8 +5,10 @@ Java program simulating four CPU scheduling algorithms:
 - FCAI Scheduling – a custom hybrid algorithm combining priority, arrival time, and remaining burst time into a single FCAI Factor to dynamically manage the execution order and quantum allocation for processes.
     - FCAI Factor = (10−Priority) + (Arrival Time/V1) + (Remaining Burst Time/V2)
       Where:
+      
              - V1 = last arrival time of all processes/10
              - V2 = max burst time of all processes/10
+      
     - Quantum Allocation Rules:
            - Each process starts with a unique quantum.
            - When processes are preempted or added back to the queue, their quantum is updated dynamically:
