@@ -10,10 +10,13 @@ Java program simulating four CPU scheduling algorithms:
              - V2 = max burst time of all processes/10
       
     - Quantum Allocation Rules:
+      
            - Each process starts with a unique quantum.
            - When processes are preempted or added back to the queue, their quantum is updated dynamically:
                 - Q= Q + 2 (if process completes its quantum and still has remaining work)
                 - Q=Q + unused quantum (if process is preempted)
+      
     - Non-Preemptive and Preemptive Execution:
+
            - A process executes non-preemptively for the first 40% of its quantum.
            - After 40% execution, preemption is allowed.
