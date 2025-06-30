@@ -3,7 +3,7 @@ Java program simulating four CPU scheduling algorithms:
 - Shortest Job First (SJF) (Non-preemptive, solves starvation)
 - Shortest Remaining Time First (SRTF) (Preemptive, solves starvation)
 - FCAI Scheduling – a custom hybrid algorithm combining priority, arrival time, and remaining burst time into a single FCAI Factor to dynamically manage the execution order and quantum allocation for processes.
-    - FCAI Factor = (10−Priority) + (Arrival Time/V1) + (Remaining Burst Time/V2)
+    - FCAI Factor = (10−Priority) + (Arrival Time/V1) + (Remaining Burst Time/V2), 
       Where:
       
              - V1 = last arrival time of all processes/10
